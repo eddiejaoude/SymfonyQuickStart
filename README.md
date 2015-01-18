@@ -25,8 +25,11 @@ Latest deploy (inc. branches) https://symfony-quickstart.herokuapp.com/en/
 ## Screenshots
 
 ![homepage](/doc/assets/homepage.png "Homepage")
+---
 ![login](/doc/assets/login.png "Login")
+---
 ![register](/doc/assets/register.png "Register")
+---
 ![register-fr](/doc/assets/register-fr.png "Register French")
 
 ## Run app
