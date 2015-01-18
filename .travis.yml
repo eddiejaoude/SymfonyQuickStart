@@ -14,6 +14,13 @@ script:
   - make symfony.test.spec config=test/phpspec.yml
   - make scrutinizer.coverage
 
+after_failure:
+  - make symfony.logs
+
+env:
+  global:
+    - secure: U1TFca6LeHYWKiBJznqjO7c8F8sK63OnH37O/v+9N/wvp9YBusDzJ0NyerFbxce4c28ZL1JFUQUgAqeHOzDFjHdqY7sHD8YHSUEZS9ZCjXsfnKnEIPY/HOCOOED7dYZrLp6NZFF1B3BoosguFTenEMT2XEc1DsmwfHk3aqLYNes=
+
 deploy:
   provider: heroku
   api_key:
