@@ -13,3 +13,13 @@ script:
   - make symfony.test.unit suite=app
   - make symfony.test.spec config=test/phpspec.yml
   - make scrutinizer.coverage
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: Z3ayUw0ugCox7Dyvw5o1L3xCySlf8R5Pi124xffqvw5A/jnvi6yyZ/bUvwonNWTYhsR2WydAjgz9KFSjhgUEUNQpHa+rpSMpiZCCkmblAhdakHHVo9AR3X165sM/VGLFVnC69XkfvS/F8l6iAqoyWQAdjaR6GLtnY/dxgMmavko=
+  app: symfony-quickstart
+  on:
+    all_branches: true
+  run:
+      - "make symfony.dev.rebuild"
