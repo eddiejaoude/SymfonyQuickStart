@@ -26,7 +26,7 @@ branches:
 
 env:
   global:
-    - secure: VbBYQenby0LIJ9kEKZwC+4ffCW9lGCSt5O2QkUUAKhBNBoYw7KufEOhAVNwbRM4fOTnkjhyxxvwIdgVZprT9VZQnHqJgQ5uVs45hADE2HSevP1PdkrX7YJnbkiLGiOQe4u6Ctg0KSTRBecSAp1i3cIunPeSc+hbfQW2eo5Q/h0M=
+    - secure: XWoz6d9RvX6C3UGNNhPlMfdsg8p4J+5c6ZO6TB0sGIK8zVRSYwm3fTDLb+xIZKiBmp0eqgVmkiO9gPdkMtorfTUbEPYz2C2kXmR9gwtySQHqAcCPlNhDY1dloV9/3C3SKa58fvNRTkSRXR0bT/obVo0IUFLRyLnX4uLt2zhRHk4=
 
 deploy:
   provider: heroku
