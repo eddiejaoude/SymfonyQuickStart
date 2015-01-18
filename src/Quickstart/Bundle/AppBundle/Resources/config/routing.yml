@@ -1,0 +1,11 @@
+quickstart_app_changelog:
+    path:     /changelog
+    defaults: { _controller: QuickstartAppBundle:Default:changelog }
+
+quickstart_app_homepage:
+    path:     /
+    defaults: { _controller: QuickstartAppBundle:Default:index }
+
+quickstart_app_account:
+    path:     /account
+    defaults: { _controller: QuickstartAppBundle:Account:index }
