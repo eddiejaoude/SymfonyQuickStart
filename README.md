@@ -1,10 +1,10 @@
 | --------- | master | develop | feature |
 | --------- | ------ | ------- | ------- |
-| Build     | --- | --- | --- |
+| Build     | [![Build Status](https://travis-ci.org/eddiejaoude/SymfonyQuickStart.svg?branch=master)](https://travis-ci.org/eddiejaoude/SymfonyQuickStart) | --- | --- |
 | Coverage  | --- | --- | --- |
 | Analysis  | --- | --- | --- |
-| json deps | --- | --- | --- |
-| lock deps | --- | --- | --- |
+| json deps | [![Dependency Status](https://www.versioneye.com/user/projects/54bbab25879d51e9aa00021c/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54bbab25879d51e9aa00021c) | --- | --- |
+| lock deps | [![Dependency Status](https://www.versioneye.com/user/projects/54bbab35879d51106e0001ea/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54bbab35879d51106e0001ea) | --- | --- |
 
 # perf-ci-private
 
