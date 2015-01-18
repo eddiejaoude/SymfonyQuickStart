@@ -14,12 +14,19 @@ script:
   - make symfony.test.spec config=test/phpspec.yml
   - make scrutinizer.coverage
 
+after_success:
+  - make build.package
+
 after_failure:
   - make symfony.logs
 
+branches:
+  except:
+    - /^build-[0-9a-z\-\/]*/
+
 env:
   global:
-    - secure: U1TFca6LeHYWKiBJznqjO7c8F8sK63OnH37O/v+9N/wvp9YBusDzJ0NyerFbxce4c28ZL1JFUQUgAqeHOzDFjHdqY7sHD8YHSUEZS9ZCjXsfnKnEIPY/HOCOOED7dYZrLp6NZFF1B3BoosguFTenEMT2XEc1DsmwfHk3aqLYNes=
+    - secure: VbBYQenby0LIJ9kEKZwC+4ffCW9lGCSt5O2QkUUAKhBNBoYw7KufEOhAVNwbRM4fOTnkjhyxxvwIdgVZprT9VZQnHqJgQ5uVs45hADE2HSevP1PdkrX7YJnbkiLGiOQe4u6Ctg0KSTRBecSAp1i3cIunPeSc+hbfQW2eo5Q/h0M=
 
 deploy:
   provider: heroku
