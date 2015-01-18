@@ -8,7 +8,7 @@
 
 # perf-ci-private
 
-Latest deploy (inc. branches) https://perf-ci.herokuapp.com/en/
+Latest deploy (inc. branches) https://symfony-quickstart.herokuapp.com/en/
 
 **Note: if you get an error, wait a minute & try again (refresh the page), the Application is probably deploying out or has gone to sleep.**
 
@@ -20,6 +20,14 @@ Latest deploy (inc. branches) https://perf-ci.herokuapp.com/en/
 * [Localisation](/doc/Localisation.md)
 * [PageLayout](/doc/PageLayout.md)
 * [Registration](/doc/Registration.md)
+
+
+## Screenshots
+
+![homepage](/doc/assets/homepage.png "Homepage")
+![login](/doc/assets/login.png "Login")
+![register](/doc/assets/register.png "Register")
+![register-fr](/doc/assets/register-fr.png "Register French")
 
 ## Run app
 
