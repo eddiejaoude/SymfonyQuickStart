@@ -1,0 +1,15 @@
+language: php
+
+php:
+  - 5.5
+
+before_script:
+  - curl -s http://getcomposer.org/installer | php
+  - php composer.phar install --dev --no-interaction
+  - make symfony.dev.rebuild
+
+script:
+  - make symfony.test.bdd suite=quickstart_app config=test/behat.yml
+  - make symfony.test.unit suite=app
+  - make symfony.test.spec config=test/phpspec.yml
+  - make scrutinizer.coverage
