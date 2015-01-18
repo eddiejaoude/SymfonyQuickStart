@@ -1,5 +1,5 @@
 LOCATION=./vendor/eddiejaoude/dev-helper-cmds
-GITHUBPROJECT=eddiejaoude/Quickstart
+GITHUBPROJECT=eddiejaoude/SymfonyQuickstart
 VERSIONFILE=version
 
 include $(LOCATION)/include.all
