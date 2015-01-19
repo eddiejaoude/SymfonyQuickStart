@@ -32,6 +32,22 @@ Latest deploy (inc. branches) https://symfony-quickstart.herokuapp.com/en/
 ---
 ![register-fr](/doc/assets/register-fr.png "Register French")
 
+## Setup
+
+1. Install dependencies
+
+```
+php composer.phar install
+```
+
+2. Update parameters
+
+```
+/app/config/parameters_dev.yml
+```
+
+Database parameters are important: host, username, password etc...
+
 ## Run app
 
 1. `make dev.run`
