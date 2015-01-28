@@ -1,0 +1,24 @@
+d784c12	Travis CI	Wed Jan 28 13:45:31 2015 +0000	Set build VERSION number build-master-11
+983141f	Eddie Abou-Jaoude	Wed Jan 28 13:23:51 2015 +0000	Updated title on README
+7e1aa4a	Eddie Jaoude	Mon Jan 19 05:36:53 2015 +0000	Installation instructions with composer
+00df01e	Eddie Jaoude	Sun Jan 18 18:54:32 2015 +0000	Fixed project name for create release tag
+825ac5a	Eddie Jaoude	Sun Jan 18 13:55:04 2015 +0000	Updated Travis CI ENV params
+132be0c	Eddie Jaoude	Sun Jan 18 13:25:25 2015 +0000	Heroku profile added
+9179445	Eddie Jaoude	Sun Jan 18 13:25:08 2015 +0000	Coverage & Quality badges added
+098e094	Eddie Jaoude	Sun Jan 18 13:15:40 2015 +0000	Scrutinizer config added
+d2791b2	Eddie Jaoude	Sun Jan 18 13:15:24 2015 +0000	Secure token added for Packaging
+49011ac	Eddie Jaoude	Sun Jan 18 13:10:09 2015 +0000	Display logs after CI failure
+e8ca473	Eddie Jaoude	Sun Jan 18 13:09:41 2015 +0000	Deployment to heroku
+718e872	Eddie Jaoude	Sun Jan 18 12:50:36 2015 +0000	Build & Dependency badges added to README
+8d56315	Eddie Jaoude	Sun Jan 18 12:42:15 2015 +0000	Build directory added
+cdf2317	Eddie Jaoude	Sun Jan 18 12:31:25 2015 +0000	Updated mysql host connection params
+e86cef9	Eddie Jaoude	Sun Jan 18 12:24:09 2015 +0000	Travis config file for CI
+85749b8	Eddie Jaoude	Sun Jan 18 12:15:44 2015 +0000	Updated screenshots formatted
+81dd088	Eddie Jaoude	Sun Jan 18 12:14:47 2015 +0000	Screenshots added to README
+befce15	Eddie Jaoude	Sun Jan 18 12:00:32 2015 +0000	Documentation
+00d03fe	Eddie Jaoude	Sun Jan 18 11:55:16 2015 +0000	Initial framework commit with tests
+372942a	Eddie Jaoude	Sun Jan 18 11:53:00 2015 +0000	Custom Make commands
+4e425fd	Eddie Jaoude	Sun Jan 18 06:03:45 2015 +0000	Change log template file
+be86dba	Eddie Jaoude	Sun Jan 18 06:03:19 2015 +0000	License file added (MIT)
+56e85ff	Eddie Jaoude	Sun Jan 18 06:02:28 2015 +0000	Contributing documentation
+e78557b	Eddie Jaoude	Sun Jan 18 05:58:04 2015 +0000	Version file
