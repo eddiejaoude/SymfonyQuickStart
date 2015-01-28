@@ -6,7 +6,7 @@
 | json deps | [![Dependency Status](https://www.versioneye.com/user/projects/54bbab25879d51e9aa00021c/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54bbab25879d51e9aa00021c) | --- | --- |
 | lock deps | [![Dependency Status](https://www.versioneye.com/user/projects/54bbab35879d51106e0001ea/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54bbab35879d51106e0001ea) | --- | --- |
 
-# perf-ci-private
+# Symfony QuickStart
 
 Latest deploy (inc. branches) https://symfony-quickstart.herokuapp.com/en/
 
