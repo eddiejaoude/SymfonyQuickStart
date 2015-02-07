@@ -28,7 +28,9 @@
         "friendsofsymfony/user-bundle": "~2.0@dev",
         "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle": "0.1.*",
         "eddiejaoude/dev-helper-cmds": "dev-master",
-        "doctrine/doctrine-fixtures-bundle": "2.2.*"
+        "doctrine/doctrine-fixtures-bundle": "2.2.*",
+        "mnapoli/php-di": "4.4.*",
+        "mnapoli/php-di-symfony2": "1.0.*"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "*",
