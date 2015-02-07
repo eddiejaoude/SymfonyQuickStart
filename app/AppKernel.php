@@ -5,6 +5,35 @@ use Symfony\Component\Config\Loader\LoaderInterface;
 
 class AppKernel extends Kernel
 {
+    /**
+     * Gets the container's base class.
+     *
+     * @return string
+     */
+    protected function getContainerBaseClass()
+    {
+        return 'DI\Bridge\Symfony\SymfonyContainerBridge';
+    }
+
+    /**
+     * Initializes the DI container.
+     */
+    protected function initializeContainer()
+    {
+        parent::initializeContainer();
+
+        // Configure your container here
+        // http://php-di.org/doc/container-configuration
+        $builder = new \DI\ContainerBuilder();
+        $builder->addDefinitions(__DIR__ . '/config/di.php');
+        $builder->wrapContainer($this->getContainer());
+
+        $this->getContainer()->setFallbackContainer($builder->build());
+    }
+
+    /**
+     * @return array
+     */
     public function registerBundles()
     {
         $bundles = array(
@@ -34,6 +63,9 @@ class AppKernel extends Kernel
         return $bundles;
     }
 
+    /**
+     * @param LoaderInterface $loader
+     */
     public function registerContainerConfiguration(LoaderInterface $loader)
     {
         $loader->load(__DIR__.'/config/config_'.$this->getEnvironment().'.yml');
