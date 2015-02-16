@@ -42,9 +42,7 @@
         "guzzlehttp/guzzle": "5.*",
         "chartinger/behat-twig-report-extension": "*@dev",
         "phpunit/phpunit": "4.*@stable",
-        "phpspec/phpspec": "~2.0",
-        "codegyre/robo": "*",
-        "henrikbjorn/phpspec-code-coverage": "~0.2"
+        "phpspec/phpspec": "~2.0"
     },
     "scripts": {
         "post-root-package-install": [
