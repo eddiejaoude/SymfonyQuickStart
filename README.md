@@ -130,3 +130,7 @@ More information on commands available visit [Make CMDs lib](https://github.com/
 ## Contributions
 
 Please read on [Contribution Guildlines](/CONTRIBUTING.md)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/eddiejaoude/symfonyquickstart/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
