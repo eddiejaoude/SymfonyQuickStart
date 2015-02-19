@@ -3,6 +3,14 @@ services:
 #        class: Quickstart\Bundle\AppBundle\Example
 #        arguments: [@service_id, "plain_value", %parameter%]
 
+  quickstart_app_default_controller:
+      class:     Quickstart\Bundle\AppBundle\Controller\DefaultController
+      arguments: ["@templating"]
+
+  quickstart_app_account_controller:
+      class:     Quickstart\Bundle\AppBundle\Controller\AccountController
+      arguments: ["@templating"]
+
   quickstart_app_main.menu_builder:
     class: Quickstart\Bundle\AppBundle\Menu\MenuBuilder
     arguments: ["@knp_menu.factory","@security.context"]
