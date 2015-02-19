@@ -13,31 +13,33 @@ use Behat\Gherkin\Node\TableNode;
  * @package Quickstart\Bundle\AppBundle\Features\Context
  */
 class FeatureContext extends MinkContext implements Context, SnippetAcceptingContext
-
 {
-    private $_parameters = array();
+    private $parameters = array();
 
     /**
-     * Initializes context.
-     * Every scenario gets it's own context object.
-     * @param   array $parameters Context parameters (set them up through behat.yml)
+     * @param $name
+     *
+     * @return null
+     * @throws \Exception
      */
-
-    public function __construct()
-    {
-
-    }
-
     public function getParameter($name)
     {
-        if (count($this->_parameters) === 0) {
+        if (count($this->parameters) === 0) {
             throw new \Exception('Parameters not loaded!');
         } else {
-            $parameters = $this->_parameters;
-            return (isset($parameters[$name])) ? $parameters[$name] : null;
+            $parameters = $this->parameters;
+
+            return (isset($parameters[ $name ])) ? $parameters[ $name ] : null;
         }
     }
 
+    /**
+     * @param     $lambda
+     * @param int $wait
+     *
+     * @return bool
+     * @throws \Exception
+     */
     public function spin($lambda, $wait = 60)
     {
         for ($i = 0; $i < $wait; $i++) {
@@ -78,7 +80,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
             }
 
             if (empty($field)) {
-                die('Field not found ' . $fieldSelector. PHP_EOL);
+                throw new \Exception('Field not found ' . $fieldSelector . PHP_EOL);
             }
 
             $tag = strtolower($field->getTagName());
@@ -143,15 +145,15 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
                     $actual = array($actual);
                 }
 
-                $options = array();
+                $options     = array();
                 $optionNodes = $this->getSession()->getDriver()->find($node->getXpath() . "/option");
                 foreach ($optionNodes as $optionNode) {
-                    $options[$optionNode->getValue()] = $optionNode->getText();
-                    $options[$optionNode->getText()] = $optionNode->getText();
+                    $options[ $optionNode->getValue() ] = $optionNode->getText();
+                    $options[ $optionNode->getText() ]  = $optionNode->getText();
                 }
                 foreach ($actual as $index => $optionValue) {
-                    if (isset($options[$optionValue])) {
-                        $actual[$index] = $options[$optionValue];
+                    if (isset($options[ $optionValue ])) {
+                        $actual[ $index ] = $options[ $optionValue ];
                     }
                 }
             } elseif ($node->getTagName() == 'label') {
@@ -159,6 +161,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
                     $option = $this->fixStepArgument(trim($option));
                     $this->assertSession()->checkboxChecked($option);
                 }
+
                 return true;
             } else {
                 $actual = $node->getValue();
@@ -201,7 +204,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function assertFieldContains($field, $value)
     {
-        $node = $this->assertSession()->fieldExists($field);
+        $node   = $this->assertSession()->fieldExists($field);
         $actual = $node->getValue();
         if (is_array($actual)) {
             $actual = join(',', $actual);
@@ -246,7 +249,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function thePersonsAreUnlinked($count, $area)
     {
-        $str = $this->getSession()->getPage()->getContent();
+        $str    = $this->getSession()->getPage()->getContent();
         $count2 = substr_count($str, $area);
         if ($count === $count2) {
             echo 'The count of:' . $count2 . ' is correct';
@@ -262,7 +265,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
     {
         if ((string)$this->_response->getStatusCode() !== $httpStatus) {
             throw new \Exception('HTTP code does not match ' . $httpStatus .
-                ' (actual: ' . $this->_response->getStatusCode() . ')');
+                                 ' (actual: ' . $this->_response->getStatusCode() . ')');
         }
     }
 
@@ -286,4 +289,3 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
 
     }
 }
-
