@@ -2,8 +2,12 @@ default:
     suites:
       default:
         contexts:
-          - FeatureContext:
-            session:   '@session'
+          - Behat\WebApiExtension\Context\WebApiContext
+          - Behat\MinkExtension\Context\MinkContext
+          - WebFeatureContext:
+            session: '@session'
+          - HomepageContext
+          - ProfileformContext
       quickstart_app:
         type: symfony_bundle
         bundle: QuickstartAppBundle
@@ -35,6 +39,10 @@ phantomjs:
         bundle: QuickstartAppBundle
     extensions:
       Behat\Symfony2Extension: ~
+      SensioLabs\Behat\PageObjectExtension:
+        namespaces:
+          page: [Page]
+          element: [Page\Element]
       Behat\MinkExtension:
         base_url: 'http://localhost:8000'
         sessions:
