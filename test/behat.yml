@@ -3,8 +3,6 @@ default:
       default:
         contexts:
           - Behat\MinkExtension\Context\MinkContext
-#          - HomepageContext
-#          - ProfileformContext
           - FeatureContext:
             session:   '@session'
       quickstart_app:
