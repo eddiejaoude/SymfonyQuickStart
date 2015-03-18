@@ -2,19 +2,27 @@ default:
     suites:
       default:
         contexts:
-          - Behat\WebApiExtension\Context\WebApiContext
           - Behat\MinkExtension\Context\MinkContext
-          - WebFeatureContext:
-            session: '@session'
-          - HomepageContext
-          - ProfileformContext
+#          - HomepageContext
+#          - ProfileformContext
+          - FeatureContext:
+            session:   '@session'
       quickstart_app:
+        contexts:
+          - Behat\MinkExtension\Context\MinkContext
+          - Quickstart\Bundle\AppBundle\Features\Context\FeatureContext
+          - Quickstart\Bundle\AppBundle\Features\Context\HomepageContext
+          - Quickstart\Bundle\AppBundle\Features\Context\ProfileformContext
         type: symfony_bundle
         bundle: QuickstartAppBundle
         filters:
           tags: ~@omit
     extensions:
       Behat\Symfony2Extension: ~
+      SensioLabs\Behat\PageObjectExtension:
+        namespaces:
+          page: [Quickstart\Bundle\AppBundle\Features\Context\Page]
+          element: [Quickstart\Bundle\AppBundle\Features\Context\Page\Element]
       Behat\MinkExtension:
         sessions:
           my_session:

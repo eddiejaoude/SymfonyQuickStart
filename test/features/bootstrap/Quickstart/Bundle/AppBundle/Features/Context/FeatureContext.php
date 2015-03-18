@@ -1,16 +1,15 @@
 <?php
 
+namespace Quickstart\Bundle\AppBundle\Features\Context;
+
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\Behat\Context\Context;
-use Behat\WebApiExtension;
-
-
-define('BEHAT_ERROR_REPORTING', E_ERROR | E_WARNING | E_PARSE);
+use Behat\Gherkin\Node\TableNode;
 
 /**
  * Features context
  */
-class WebFeatureContext implements Context, SnippetAcceptingContext
+class FeatureContext implements Context, SnippetAcceptingContext
 {
     /**
      * Initializes context.

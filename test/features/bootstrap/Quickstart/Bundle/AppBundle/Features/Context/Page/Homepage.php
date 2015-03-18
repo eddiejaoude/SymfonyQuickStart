@@ -1,6 +1,6 @@
 <?php
 
-namespace Page;
+namespace Quickstart\Bundle\AppBundle\Features\Context\Page;
 
 use SensioLabs\Behat\PageObjectExtension\PageObject\Page;
 use Behat\Mink;

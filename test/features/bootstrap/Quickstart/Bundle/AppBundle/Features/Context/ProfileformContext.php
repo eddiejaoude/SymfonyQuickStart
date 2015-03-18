@@ -1,13 +1,12 @@
 <?php
 
+namespace Quickstart\Bundle\AppBundle\Features\Context;
+
 use SensioLabs\Behat\PageObjectExtension\Context\PageObjectContext;
 use Behat\Gherkin\Node\TableNode;
 
 class ProfileformContext extends PageObjectContext
 {
-    public function __construct()
-    {
-    }
 
     /**
      * @param TableNode $table

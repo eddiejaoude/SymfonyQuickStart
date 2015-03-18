@@ -1,6 +1,6 @@
 <?php
 
-namespace Page\Element;
+namespace Quickstart\Bundle\AppBundle\Features\Context\Page\Element;
 
 use SensioLabs\Behat\PageObjectExtension\PageObject\Element;
 use SensioLabs\Behat\PageObjectExtension\PageObject\Page;
@@ -12,8 +12,7 @@ class Formfilling extends Element
     /**
      * @var array|string $selector
      */
-    protected $selector = '.formtest';
-
+    protected $selector = '.form-group';
 
     /**
      * @param TableNode $table
@@ -25,7 +24,6 @@ class Formfilling extends Element
         $page = $this;
         foreach ($table->getRows() as $row) {
             list($fieldSelector, $value) = $row;
-            echo 'this is a value of some kind:' . $fieldSelector;
             $field = $page->findField($fieldSelector);
             if (empty($field)) {
                 $field = $this->getDriver()->find('//label[contains(normalize-space(string(.)), "' . $fieldSelector . '")]');
@@ -137,7 +135,7 @@ class Formfilling extends Element
      *
      * @return string
      */
-    protected function fixStepArgument2($argument)
+    protected function fixStepArgument($argument)
     {
         return str_replace('\\"', '"', $argument);
     }

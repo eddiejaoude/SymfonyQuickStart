@@ -1,5 +1,7 @@
 <?php
 
+namespace Quickstart\Bundle\AppBundle\Features\Context;
+
 use SensioLabs\Behat\PageObjectExtension\Context\PageObjectContext;
 
 class HomepageContext extends PageObjectContext
@@ -10,6 +12,8 @@ class HomepageContext extends PageObjectContext
     }
 
     /**
+     * @param string $email
+     * @param string $password
      * @Given I am logged in as :arg1 with password :arg2
      */
     public function iAmLoggedInAsWithPassword($email, $password)

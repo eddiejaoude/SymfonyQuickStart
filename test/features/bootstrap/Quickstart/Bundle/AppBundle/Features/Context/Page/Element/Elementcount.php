@@ -1,6 +1,6 @@
 <?php
 
-namespace Page\Element;
+namespace Quickstart\Bundle\AppBundle\Features\Context\Page\Element;
 
 use SensioLabs\Behat\PageObjectExtension\PageObject\Element;
 use SensioLabs\Behat\PageObjectExtension\PageObject\Page;
