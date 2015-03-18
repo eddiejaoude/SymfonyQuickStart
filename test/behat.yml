@@ -36,13 +36,21 @@ default:
           file: default.twig
 phantomjs:
     suites:
-      default:
-        contexts:
-          - FeatureContext:
-            session:   '@session'
-      quickstart_app:
-        type: symfony_bundle
-        bundle: QuickstartAppBundle
+       default:
+         contexts:
+           - Behat\MinkExtension\Context\MinkContext
+           - FeatureContext:
+             session:   '@session'
+       quickstart_app:
+         contexts:
+           - Behat\MinkExtension\Context\MinkContext
+           - Quickstart\Bundle\AppBundle\Features\Context\FeatureContext
+           - Quickstart\Bundle\AppBundle\Features\Context\HomepageContext
+           - Quickstart\Bundle\AppBundle\Features\Context\ProfileformContext
+         type: symfony_bundle
+         bundle: QuickstartAppBundle
+         filters:
+           tags: ~@omit
     extensions:
       Behat\Symfony2Extension: ~
       SensioLabs\Behat\PageObjectExtension:
