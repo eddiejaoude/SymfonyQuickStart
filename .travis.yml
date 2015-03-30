@@ -31,7 +31,7 @@ env:
 deploy:
   provider: heroku
   api_key:
-    secure: Z3ayUw0ugCox7Dyvw5o1L3xCySlf8R5Pi124xffqvw5A/jnvi6yyZ/bUvwonNWTYhsR2WydAjgz9KFSjhgUEUNQpHa+rpSMpiZCCkmblAhdakHHVo9AR3X165sM/VGLFVnC69XkfvS/F8l6iAqoyWQAdjaR6GLtnY/dxgMmavko=
+    secure: "AiIUUVKJ7sczcdqZKwjPQPutGCZqUXZTknKeVfO3hMpGPNxu+EmVL+iZkLjg3XK00zdNhgzvYE3ycugyyI++6+ScStfhBB5hj6d1o/FarYkGgX0O85AqIiFPKIi+No6uZwWbo1DpwQ0i4rOUn4GaFmW/LS/2NmMAwBSxEAVQh/g="
   app: symfony-quickstart
   on:
     all_branches: true
