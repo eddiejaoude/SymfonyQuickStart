@@ -1,3 +1,7 @@
+[![DashboardHub Badge](http://dashboardhub.io/badge/5506e7d1bdd384.83330390 "DashboardHub Badge")](http://dashboardhub.io/d/5506e7d1bdd384.83330390)
+
+[![Join the chat at https://gitter.im/eddiejaoude/SymfonyQuickStart](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/eddiejaoude/SymfonyQuickStart?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 | --------- | master | develop | feature |
 | --------- | ------ | ------- | ------- |
 | Build     | [![Build Status](https://travis-ci.org/eddiejaoude/SymfonyQuickStart.svg?branch=master)](https://travis-ci.org/eddiejaoude/SymfonyQuickStart) | --- | --- |
@@ -7,8 +11,6 @@
 | lock deps | [![Dependency Status](https://www.versioneye.com/user/projects/54bbab35879d51106e0001ea/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54bbab35879d51106e0001ea) | --- | --- |
 
 # Symfony QuickStart
-
-[![Join the chat at https://gitter.im/eddiejaoude/SymfonyQuickStart](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/eddiejaoude/SymfonyQuickStart?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Latest deploy (inc. branches) https://symfony-quickstart.herokuapp.com/en/
 
