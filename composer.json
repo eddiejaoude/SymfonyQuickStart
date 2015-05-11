@@ -28,11 +28,11 @@
         "friendsofsymfony/user-bundle": "~2.0@dev",
         "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle": "0.1.*",
         "eddiejaoude/dev-helper-cmds": "dev-master",
-        "doctrine/doctrine-fixtures-bundle": "2.2.*"
+        "doctrine/doctrine-fixtures-bundle": "2.2.*",
+        "sensio/generator-bundle": "2.5.*"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "*",
-        "sensio/generator-bundle": "2.5.*",
         "behat/behat":  "3.0.*",
         "behat/symfony2-extension": "~2.0@dev",
         "behat/mink-extension": "~2.0@dev",
