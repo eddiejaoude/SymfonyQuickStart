@@ -22,13 +22,13 @@ class AppKernel extends Kernel
             new Quickstart\Bundle\AppBundle\QuickstartAppBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new EddieJaoude\Bundle\SymfonyTranslationTwigCollectionBundle\EddieJaoudeSymfonyTranslationTwigCollectionBundle(),
+            new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
-            $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
         }
 
         return $bundles;
