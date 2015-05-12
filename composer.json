@@ -27,13 +27,16 @@
         "jquery/jquery":  "1.11.1",
         "friendsofsymfony/user-bundle": "~2.0@dev",
         "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle": "0.1.*",
-        "eddiejaoude/dev-helper-cmds": "dev-master",
-        "doctrine/doctrine-fixtures-bundle": "2.2.*"
+        "eddiejaoude/dev-helper-cmds": "*",
+        "doctrine/doctrine-fixtures-bundle": "2.2.*",
+        "sensio/generator-bundle": "~2.5",
+        "ext-gd": "*",
+        "ext-intl": "*",
+        "ext-intl": "*"
     },
     "require-dev": {
-        "heroku/heroku-buildpack-php": "*",
-        "sensio/generator-bundle": "2.5.*",
         "behat/behat":  "3.0.*",
+        "heroku/heroku-buildpack-php": "*",
         "behat/symfony2-extension": "~2.0@dev",
         "behat/mink-extension": "~2.0@dev",
         "behat/mink-browserkit-driver": "~1.1@dev",
@@ -44,7 +47,9 @@
         "phpunit/phpunit": "4.*@stable",
         "phpspec/phpspec": "~2.0",
         "codegyre/robo": "*",
-        "henrikbjorn/phpspec-code-coverage": "~0.2"
+        "henrikbjorn/phpspec-code-coverage": "~0.2",
+        "sensiolabs/behat-page-object-extension": "dev-master",
+        "bossa/phpspec2-expect": "~1.0"
     },
     "scripts": {
         "post-root-package-install": [

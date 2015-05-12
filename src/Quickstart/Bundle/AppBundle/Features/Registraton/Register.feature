@@ -14,7 +14,7 @@ Feature: As an user, I want to be able to register a new account
       | fos_user_registration_form_plainPassword_first        | <password>                              |
       | fos_user_registration_form_plainPassword_second       | <password>                              |
     And I press "fos_user_registration_form_registerButton"
-    Then I should see "My Account"
+    Then I should see "Your progress"
     And I should see "<email-input>"
   # And I should get an email on "<email-input>" with:
   #  """
@@ -100,7 +100,7 @@ Feature: As an user, I want to be able to register a new account
     And I fill in "fos_user_registration_form_plainPassword_first" with "P@ssword1"
     And I fill in "fos_user_registration_form_plainPassword_second" with "P@ssword1"
     And I press "fos_user_registration_form_registerButton"
-    And I should see "My Account"
+    And I should see "Your progress"
 
   Scenario Outline: Create account using email that has already been used
     Given I am on the homepage
