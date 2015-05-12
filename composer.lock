@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "824d90070ec600e3cc03b5fc5c0e5904",
+    "hash": "71c50a7a9871060055cd6201490cc31f",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -946,22 +946,22 @@
         },
         {
             "name": "eddiejaoude/dev-helper-cmds",
-            "version": "dev-master",
+            "version": "0.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eddiejaoude/dev-helper-cmds.git",
-                "reference": "055085eb73b2ddbd736815ea427d02e6100dcb02"
+                "reference": "fb4361a424907cb3e4db8cf262cc812631b5f105"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eddiejaoude/dev-helper-cmds/zipball/055085eb73b2ddbd736815ea427d02e6100dcb02",
-                "reference": "055085eb73b2ddbd736815ea427d02e6100dcb02",
+                "url": "https://api.github.com/repos/eddiejaoude/dev-helper-cmds/zipball/fb4361a424907cb3e4db8cf262cc812631b5f105",
+                "reference": "fb4361a424907cb3e4db8cf262cc812631b5f105",
                 "shasum": ""
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "description": "Useful commands for every Developer",
-            "time": "2015-01-12 06:02:14"
+            "time": "2014-12-12 18:36:33"
         },
         {
             "name": "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle",
@@ -4530,7 +4530,6 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "friendsofsymfony/user-bundle": 20,
-        "eddiejaoude/dev-helper-cmds": 20,
         "behat/symfony2-extension": 20,
         "behat/mink-extension": 20,
         "behat/mink-browserkit-driver": 20,

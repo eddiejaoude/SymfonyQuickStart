@@ -27,7 +27,7 @@
         "jquery/jquery":  "1.11.1",
         "friendsofsymfony/user-bundle": "~2.0@dev",
         "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle": "0.1.*",
-        "eddiejaoude/dev-helper-cmds": "dev-master",
+        "eddiejaoude/dev-helper-cmds": "*",
         "doctrine/doctrine-fixtures-bundle": "2.2.*",
         "sensio/generator-bundle": "~2.5",
         "ext-gd": "*",
