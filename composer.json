@@ -29,7 +29,9 @@
         "eddiejaoude/eddie-jaoude-symfony-translation-twig-collection-bundle": "0.1.*",
         "eddiejaoude/dev-helper-cmds": "dev-master",
         "doctrine/doctrine-fixtures-bundle": "2.2.*",
-        "sensio/generator-bundle": "~2.3"
+        "sensio/generator-bundle": "~2.3",
+        "ext-gd": "*",
+        "ext-intl": "*"
     },
     "require-dev": {
         "behat/behat":  "3.0.*",
