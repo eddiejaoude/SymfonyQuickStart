@@ -31,6 +31,7 @@
         "doctrine/doctrine-fixtures-bundle": "2.2.*",
         "sensio/generator-bundle": "~2.5",
         "ext-gd": "*",
+        "ext-intl": "*",
         "ext-intl": "*"
     },
     "require-dev": {
