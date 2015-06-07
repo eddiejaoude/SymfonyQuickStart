@@ -1,4 +1,4 @@
-[![DashboardHub Badge](http://dashboardhub.io/badge/5506e7d1bdd384.83330390 "DashboardHub Badge")](http://dashboardhub.io/d/5506e7d1bdd384.83330390)
+[![DashboardHub Badge](http://pipeline.dashboardhub.io/badge/5506e7d1bdd384.83330390 "DashboardHub Badge")](http://pipeline.dashboardhub.io/d/5506e7d1bdd384.83330390)
 
 [![Join the chat at https://gitter.im/eddiejaoude/SymfonyQuickStart](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/eddiejaoude/SymfonyQuickStart?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
